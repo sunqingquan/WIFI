@@ -15,3 +15,4 @@ import os
 from wifiphisher.pywifiphisher import run
 root_logger = logging.getLogger()
 root_logger.addHandler(logging.NullHandler())
+dir_of_executable = os.path.dirname(__file__)
