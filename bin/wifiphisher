@@ -11,3 +11,5 @@ except NameError:
 
 import logging
 import os
+
+from wifiphisher.pywifiphisher import run
