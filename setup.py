@@ -32,6 +32,15 @@ except NameError:
     pass  # Python 3
 
 
+class CleanCommand(Command):
+    """Custom clean command to tidy up the project root."""
+    user_options = []
+    def initialize_options(self):
+        pass
+    def finalize_options(self):
+        pass
+    def run(self):
+        os.system('rm -vrf ./build ./dist ./*.pyc ./*.tgz ./*.egg-info')
 
 
 # code for checking if libnl-dev and libnl-genl-dev exist
